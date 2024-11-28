@@ -16,11 +16,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("Lifecycle", "onCreate")
+        setContentView(R.layout.activity_main)
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d("Lifecycle", "onStart")
+        Log.d("Lifecycle", "onStart")// d for debug, i for info, w for warning, e for error
     }
 
     override fun onResume() {
